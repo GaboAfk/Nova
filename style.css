@@ -1,11 +1,27 @@
+@font-face {
+    font-family: 'Bestigia';
+    src: url('fonts/Bestigia-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lucida Bright';
+    src: url('fonts/lucidabright_demi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
         margin: 0;
-        font-family: 'Roboto', sans-serif;
-        /* background-color: #f5f5f5; */
+        font-family: 'Bestigia', sans-serif;
+        
     }
     .promo {
-        background-color: #f9f1ed;
-        color: black;
+        
+        background-color: #CBE7D3;
+        color: #00818D;
         padding: 10px;
         text-align: center;
         margin-bottom: 30px;
@@ -20,14 +36,15 @@ body {
         justify-content: center;
         padding: 30px 0;
         position: relative;
+        margin-bottom: 30px;
     }
-    .bobimage {
+    .logo {
         display: flex;
         justify-content: center;
     }
     
-    .bobimage img {
-        width: 200px;
+    .logo img {
+        width: 140px;
     }
     .iconbolsa {
         position: absolute;
@@ -42,36 +59,77 @@ body {
         justify-content: center;
         font-size: 16px;
         margin-bottom: 20px;
+        
+
+        background-color: #00818D;
+        color: white;
+        font-weight: 100%;
         }
         .menu .btn {
             padding: 10px 20px;
         }
         .menu .btn:hover {
-            color: #f9f1ed;
-            background-color: #333;
+            color: #00818D;
+            background-color: white;
             padding: 10px 20px;
-            /* border-radius: 5px; */
         }
-    .header {
-        background-image: url('public/fondo-maquillaje2.jpg');
-        background-size: cover;
-        background-position: center;
-        color: white;
-        text-align: center;
-        padding: 100px 20px;
-        gap: 30px;
+        .menu a {
+            text-decoration: none;
+            color: white;
         }
-        .header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 48px;
+        
+        .menu-fixed {
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            width: 100%;
+            background-color: #00818D;
+            color: white;
         }
-        .header p {
-            font-size: 18px;
+        .menu-fixed .btn {
+            padding: 10px 20px;
         }
-        .header .info {
-            bottom: 20px;
-            left: 50%;
-            font-size: 14px;
+        .menu-fixed .btn:hover {
+            color: #00818D;
+            background-color: white;
+            padding: 10px 20px;
+        }
+        
+
+        .carousel-container {
+            width: 100%;
+            overflow: hidden;
+            height: 700px;
+            object-position: center;
+ 
+        }
+        .carousel {
+            display: flex;
+            width: 300%; 
+            animation: slide 25s ease-in-out infinite;
+            align-items: center;
+        }
+        
+        .carousel img {
+            width: 70%;
+            object-fit: cover;
+            height: 100%;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(0); }
+            
+            25% { transform: translateX(-33.33%); }
+            45% { transform: translateX(-33.33%); }
+            
+            50% { transform: translateX(-66.66%); }
+            70% { transform: translateX(-66.66%); }
+            
+            75% { transform: translateX(-33.33%); }
+            95% { transform: translateX(-33.33%); }
+            
+            100% { transform: translateX(0); }
         }
 
     .service-menu {
@@ -80,9 +138,9 @@ body {
         background-color: white;
         }
         .service-menu h2 {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Lucida Bright', serif;
             font-size: 32px;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
         .service-menu .icons {
             display: flex;
@@ -93,9 +151,10 @@ body {
         .service-menu .icons div {
             text-align: center;
         }
-        .service-menu .icons i {
+        .service-menu .icons img {
             font-size: 24px;
             margin-bottom: 10px;
+            width: 30px;
         }
         .service-menu p {
             font-size: 16px;
@@ -117,7 +176,7 @@ body {
     .our-story {
         display: flex;
         padding: 50px 20px;
-        background-color: #f9f1ed;
+        background-color: #CBE7D3;
         }
         .our-story img {
             width: 50%;
@@ -128,26 +187,16 @@ body {
             width: 50%;
         }
         .our-story h2 {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Lucida Bright', serif;
             font-size: 32px;
             margin-bottom: 20px;
+            color: #00818D;
         }
         .our-story p {
             font-size: 16px;
             margin-bottom: 20px;
-        }
-        .our-story .btn {
-            background-color: transparent;
-            color: black;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            border: 2px solid black;
-        }
-        .our-story .btn:hover {
-            background-color: #333;
-            color: #f9f1ed;
+            text-align: justify;
+            color: #70a78d;
         }
     .shop {
         text-align: center;
@@ -155,26 +204,23 @@ body {
         background-color: white;
         }
         .shop h2 {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Lucida Bright', serif;
             font-size: 32px;
             margin-bottom: 20px;
         }
         .shop .products {
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 5px;
             margin-bottom: 40px;
         }
         .shop .product {
-            background-color: #f9f1ed;
-            padding: 20px;
-            border-radius: 10px;
+            padding: 10px;
             width: 200px;
             text-align: center;
         }
         .shop .product img {
             width: 100%;
-            border-radius: 10px;
             margin-bottom: 10px;
         }
         .shop .product h3 {
@@ -185,7 +231,7 @@ body {
             font-size: 16px;
             margin-bottom: 10px;
         }
-        .shop .product .price {
+        .shop .product .precio {
             font-weight: bold;
             margin-bottom: 10px;
         }
@@ -215,3 +261,58 @@ body {
             background-color: #333;
             color: #f9f1ed;
         }
+        
+        .form {
+            text-align: center;
+            padding: 40px 200px;
+            background-color: #00818D;
+            color: white;
+            
+        }
+        
+        .form h2 {
+            font-family: 'Lucida Bright', serif;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        
+        .form label {
+            flex: 0 0 100px; 
+            text-align: right;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        
+        .form input,
+        .form textarea {
+            flex: 1;
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: 'Lucida Bright', serif;
+        }
+          
+          .form .btn {
+            background-color: transparent;
+            color: white;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: 'Bestigia', sans-serif;
+          }
+          
+          .form .btn:hover {
+            background-color: white;
+            color: #00818D;
+          }

@@ -1,142 +1,127 @@
 <html>
- <head>
-  <title>
-   Nova
-  </title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <head>
+  <title>Nova</title>
   <link href="style.css" rel="stylesheet"/>
-  <style>
-  </style>
- </head>
- <body>
-  <section>
-    <div class="promo">
-      <p>Envio gratis en a todo Uruguay</p>
-    </div>
-    <section class="">
-      <div class="topheader">
-        <div class="bobimage"><img src="public/bob.png" alt="bob-image"></div>
-        <div class="iconbolsa"><img src="public/bolsa-compras.png" alt="bolsa-compras-image"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="main.js"></script>
+  </head>
+
+  <body>
+    <section id="topheader">
+
+      <div class="promo">
+        <p>Envio gratis a todo Uruguay</p>
       </div>
-      <div class="menu">
-        <div class="btn">Inicio</div>
-        <div class="btn">Tienda</div>
-        <div class="btn">Prensa</div>
-        <div class="btn">Acerca De</div>
-        <div class="btn">Contacto</div>
-      </div>
-    </section>
-  </section>
-  <section>
-    <div class="header">
-      <div class="">
-        <p>Descubre tu nueva pasión</p>
-      </div>
-      <h1>Always Make Room for a Little Beauty in Your Life</h1>
-      <div class="info">
-          <p>Comprar Ahora ></p>
-      </div>
-    </div>
-  </section>
-    <section>
-      <div class="service-menu">
-        <h2>Service Menu</h2>
-        <div class="icons">
-         <div>
-          <i class="fas fa-hand-sparkles"></i>
-          <p>NAILS</p>
-         </div>
-         <div>
-          <i class="fas fa-eye"></i>
-          <p>BROW</p>
-         </div>
-         <div>
-          <i class="fas fa-cut"></i>
-          <p>HAIR</p>
-         </div>
-         <div>
-          <i class="fas fa-spa"></i>
-          <p>COSMETOLOGY</p>
-         </div>
-         <div>
-          <i class="fas fa-brush"></i>
-          <p>MAKEUP</p>
-         </div>
+
+      <section>
+        <div class="topheader">
+          <div class="logo"><img src="public/logo proyecto.jpg" alt="logo proyecto"></div>
+          <div class="iconbolsa"><img src="public/bolsa-compras.png" alt="bolsa-compras-image"></div>
         </div>
-        <p>Get your nails done for great mood. Simple pleasures can make your week, not just day.</p>
-        <a class="btn" href="#">VIEW SERVICE MENU</a>
-       </div>
+
+        <div class="menu" id="menu">
+          <a href="#topheader" class="btn">Inicio</a>
+          <a href="#our-story" class="btn">Beneficios</a>
+          <a href="#products" class="btn">Productos</a>
+          <a href="#form" class="btn">Contacto</a>
+        </div>
+      </section>
+    </section>
+
+    <section class="carousel-container">
+      <div class="carousel">
+        <img src="public/crema-arriba.jpg" alt="Crema">
+        <img src="public/protector-solar-arriba.jpg" alt="Protector Solar">
+        <img src="public/serum-arriba.jpg" alt="Serum">
+      </div>
     </section>
 
     <section>
-      <div class="our-story">
-        <img alt="Portrait of a woman with long blonde hair, standing in a sunlit area with shadows of leaves on her face." height="400" src="https://storage.googleapis.com/a1aa/image/VydYIhqlGH6JFVMi1vI4y8sUfjypbLjjIfE85tW5sBRopowTA.jpg" width="600"/>
-        <div class="text">
-         <h2>
-          Our Story
-         </h2>
-         <p>
-          We started as a small beauty studio in Islington, London. Our main idea was to create the best beauty studio in the world. Can there be compromises in the best studio in the world? Our answer is always no. We care about the best quality, we hire the best specialists and provide the best customer service. This approach allowed us to grow and create awesome team that is passionate about everything we do.
-         </p>
-         <a class="btn" href="#">
-          LEARN MORE
-         </a>
+      <div class="service-menu">
+        <h2>NUESTRO COMPROMISO</h2>
+
+        <div class="icons">
+          <div>
+            <img src="public/icono-1.jpg" alt="CrueltyFree">
+            <p>Libre de Crueldad Animal</p>
+          </div>
+          <div>
+            <img src="public/icono-2.jpg" alt="Libre de Fragancias">
+            <p>Libre de Fragancias</p>
+          </div>
+          <div>
+            <img src="public/icono-3.jpg" alt="Libre de Parabenos">
+            <p>Libre de Parabenos</p>
+          </div>
+          <div>
+            <img src="public/icono-4.jpg" alt="Vegano">
+            <p>Vegano</p>
+          </div>
         </div>
-       </div>
+      </div>
+    </section>
+
+    <section id="our-story">
+      <div class="our-story">
+        <img alt="Jojoba" height="400" src="public/jojoba.jpg" width="600"/>
+        <div class="text">
+          <h2>Beneficios del Aceite de Jojoba</h2>
+          <p>
+          Entre sus múltiples beneficios, restaura el equilibrio de la piel y cabello por su elevado contenido de ceramidas y contribuye a controlar la producción de sebo y humedad. Devuelve flexibilidad, suavidad y brillo tanto a la piel como al cabello. Al proteger el envejecimiento y mantener la hidratación, tiene un efecto rejuvenecedor de la piel, suavizando arrugas, mejorando la elasticidad y la firmeza de la piel.
+          </p>
+        </div>
+      </div>
     </section>
   
-  <section>
-    <div class="shop">
-      <h2>
-       Shop
-      </h2>
-      <div class="products">
-       <div class="product">
-        <img alt="Bottle of Facial Cleanser" height="200" src="https://storage.googleapis.com/a1aa/image/KotuM3EdTlouPJVochriCAX6MREuNWrdN6yoqMzWt4gZKK8E.jpg" width="200"/>
-        <h3>
-         Facial Cleanser
-        </h3>
-        <p class="price">
-         £19.00
-        </p>
-       </div>
-       <div class="product">
-        <img alt="Bottle of Eye Cream" height="200" src="https://storage.googleapis.com/a1aa/image/KEgvMgLKMooLNlomaqmv3qfjbjWzt3JfRxUUFxrqIpTlpowTA.jpg" width="200"/>
-        <h3>
-         Eye Cream
-        </h3>
-        <p class="price">
-         £24.00
-        </p>
-       </div>
-       <div class="product">
-        <img alt="Bottle of Super Glow" height="200" src="https://storage.googleapis.com/a1aa/image/eDlcUn7q650DNqbXj2Rf105xxycqSh7iNhhZ8ANHtE3npowTA.jpg" width="200"/>
-        <h3>
-         Super Glow
-        </h3>
-        <p class="price">
-         <del>
-          £19.00
-         </del>
-         £13.00
-        </p>
-       </div>
-       <div class="product">
-        <img alt="Tube of Facial Balancing Gel" height="200" src="https://storage.googleapis.com/a1aa/image/vJIcwZ0rzF4eAy7uROwMCLRA3qMfmQ4YoJaw4qMWT7bqpowTA.jpg" width="200"/>
-        <h3>
-         Facial Balancing Gel
-        </h3>
-        <p class="price">
-         £32.00
-        </p>
-       </div>
+    <section id="products">
+      <div class="shop">
+        <h2>PRODUCTOS</h2>
+        <div class="products">
+          <div class="product">
+            <img alt="Crema contorno de ojos" height="200" src="public/crema-1.jpg" width="200"/>
+            <h3> Contorno de Ojos Regenerador</h3>
+            <p class="precio">$700.00</p>
+          </div>
+          <div class="product">
+            <img alt="Protector Solar" height="200" src="public/protector-solar.jpg" width="200"/>
+            <h3>Protector Solar</h3>
+            <p class="precio"><del>$900.00</del>$800.00</p>
+          </div>
+          <div class="product">
+            <img alt="Crema Hidratante Nutritiva de Día" height="200" src="public/crema-2.jpg" width="200"/>
+            <h3>Crema Hidratante Nutritiva de Día</h3>
+            <p class="precio">$650.00</p>
+          </div>
+          <div class="product">
+            <img alt="Sérum" height="200" src="public/serum.jpg" width="200"/>
+            <h3> Sérum Equilibrante </h3>
+            <p class="precio"> $1500.00</p>
+          </div>
+        </div>
+        <a class="btn" href="#">COMPRAR</a>
       </div>
-      <a class="btn" href="#">
-       SHOP ALL
-      </a>
+    </section>
+
+  <section id="form">
+    <div class="form">
+      <h2>Contáctanos</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="nombre"><strong>Nombre:</strong></label>
+          <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="email"><strong>Correo electrónico:</strong></label>
+        <input type="email" id="email" name="email" placeholder="Escribe tu correo" required>
+      </div>
+      <div class="form-group">
+        <label for="comentario"><strong>Comentario:</strong></label>
+        <textarea id="Comentario" name="Comentario" placeholder="Escribe tu comentario" rows="4" required></textarea>
+      </div>
+        <button type="submit" class="btn">ENVIAR</button>
+      </form>
     </div>
   </section>
-  
+
  </body>
 </html>
