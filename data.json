@@ -1,0 +1,33 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Contorno de Ojos Regenerador",
+            "price": "700.00",
+            "description": "Contorno de Ojos Regenerador",
+            "image": "public/crema-1.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Protector Solar",
+            "price2": "900.00",
+            "price": "800.00",
+            "description": "Protector Solar",
+            "image": "public/protector-solar.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Crema Hidratante Nutritiva de Día",
+            "price": "650.00",
+            "description": "Crema Hidratante Nutritiva de Día",
+            "image": "public/crema-2.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Sérum Equilibrante",
+            "price": "1500.00",
+            "description": "Sérum Equilibrante",
+            "image": "public/serum.jpg"
+        }
+    ]
+}
