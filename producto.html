@@ -51,19 +51,18 @@
                   productContainer.classList.add('product-main');
                   
                   productContainer.innerHTML = `
-                  <div class="product" data-id="${product.id}">
-                    <div class="text">
-                      <h2>${product.name}</h2>
-                      <p class="precio">$${product.price}</p>
+                    <div class="product" data-id="${product.id}">
+                      <div class="text">
+                        <h2>${product.name}</h2>
+                        ${product.price2 ? `<p class="precio"><del>$${product.price2}</del> $${product.price}</p>` : `<p class="precio">$${product.price}</p>`}
+                      </div>
+                      <div class="imagen">
+                        <img alt="${product.name}" src="${product.image}" width="600"/>
+                      </div>
                     </div>
-                    <div class="imagen">
-                      <img alt="${product.name}"  src="${product.image}" width="600"/>
-                    </div>
-                  </div>
-                    `;
+                  `;
 
                     productSection.appendChild(productContainer);
-                    
                   }
                   else {
                     console.error('Producto no encontrado.');
@@ -129,8 +128,13 @@
                       <a href="/producto.html?id=${product.id}"></a>
                       <img alt="${product.name}" height="200" src="${product.image}" width="200"/>
                       <h3>${product.name}</h3>
-                      <p class="precio">$${product.price}</p>
                       `;
+
+                    if (product.price2) {
+                      productElement.innerHTML += `<p class="precio"><del>$${product.price2}</del> $${product.price}</p>`;
+                    } else {
+                      productElement.innerHTML += `<p class="precio">$${product.price}</p>`;
+                    }
 
                     document.querySelector('.products').appendChild(productElement);
                 
